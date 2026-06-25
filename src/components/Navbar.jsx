@@ -23,30 +23,7 @@ function Navbar() {
 
       </div>
 
-      <div className="nav-actions">
-
-        <button>
-          <FaSyncAlt />
-          Refresh
-        </button>
-
-        <button>
-          <FaShareAlt />
-          Share
-        </button>
-
-        <button>
-          <FaDownload />
-          Download
-        </button>
-
-        <button>
-          <FaMoon />
-          Dark
-        </button>
-
-      </div>
-
+      
     </header>
   );
 }
