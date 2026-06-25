@@ -155,8 +155,14 @@ http://localhost:5173
 ```
 
 ---
+# Hosted Link
+```
+https://fifa-hackup.vercel.app/
+```
 
 #  Contributors
+
+Team Name-Ignite Duo
 
 * Shaun Mathew
 * Christeena Jestin
