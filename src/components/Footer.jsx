@@ -15,16 +15,25 @@ function Footer() {
           FIFA HackUp {year}
         </h2>
 
-        <p>
-          Match Statistics Dashboard 
+        <p className="footer-subtitle">
+          Interactive Match Analytics Dashboard
         </p>
+
+        <small className="footer-tech">
+          Built with React • Vite • Framer Motion
+        </small>
+
+        <small className="footer-note">
+          FIFA HackUp '26 • Quarter Final Submission
+        </small>
 
         <div className="footer-icons">
 
           <a
-            href="https://github.com"
+            href="https://github.com/ieeeccssociety803/FIFA-HACKUP-Mexico"
             target="_blank"
             rel="noreferrer"
+            title="GitHub Repository"
           >
             <FaGithub />
           </a>

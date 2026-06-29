@@ -1,8 +1,7 @@
-import matchData from "../data/matchData";
 import StatRow from "./StatRow";
 import { FaChartPie } from "react-icons/fa";
 
-function Statistics() {
+function Statistics({ match }) {
   return (
     <section className="statistics">
 
@@ -21,7 +20,7 @@ function Statistics() {
 
       <div className="stats-container">
 
-        {matchData.stats.map((stat, index) => (
+        {match.stats.map((stat, index) => (
           <StatRow
             key={index}
             title={stat.title}

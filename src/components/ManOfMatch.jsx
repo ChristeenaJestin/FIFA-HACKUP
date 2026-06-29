@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import matchData from "../data/matchData";
 import Modal from "./Modal";
 import { FaFutbol, FaStar, FaRunning } from "react-icons/fa";
 
-function ManOfMatch() {
+function ManOfMatch({ match }) {
+
   const [open, setOpen] = useState(false);
-  const player = matchData.player;
+
+  const player = match.player;
 
   return (
     <motion.section
@@ -16,7 +17,9 @@ function ManOfMatch() {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
+
       <div className="motm-card">
+
         <h2 className="motm-title">
           ⭐ MAN OF THE MATCH
         </h2>
@@ -24,6 +27,7 @@ function ManOfMatch() {
         <div className="motm-content">
 
           <div className="motm-image">
+
             <motion.img
               src={player.image}
               alt={player.name}
@@ -37,9 +41,11 @@ function ManOfMatch() {
                 stiffness: 300,
               }}
             />
+
           </div>
 
           <div className="motm-info">
+
             <h1>{player.name}</h1>
 
             <div className="rating">
@@ -47,6 +53,7 @@ function ManOfMatch() {
             </div>
 
             <div className="motm-stats">
+
               <div>
                 <FaFutbol />
                 <span>{player.goals} Goals</span>
@@ -61,6 +68,7 @@ function ManOfMatch() {
                 <FaRunning />
                 <span>{player.position}</span>
               </div>
+
             </div>
 
             <button
@@ -69,9 +77,11 @@ function ManOfMatch() {
             >
               View Details
             </button>
+
           </div>
 
         </div>
+
       </div>
 
       <Modal
@@ -79,6 +89,7 @@ function ManOfMatch() {
         onClose={() => setOpen(false)}
         player={player}
       />
+
     </motion.section>
   );
 }

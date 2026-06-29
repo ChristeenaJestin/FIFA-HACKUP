@@ -1,29 +1,40 @@
+import { useState } from "react";
+
 import Navbar from "../components/Navbar";
 import HeroScoreboard from "../components/HeroScoreboard";
 import Statistics from "../components/Statistics";
 import ManOfMatch from "../components/ManOfMatch";
+import LeagueStandings from "../components/LeagueStandings";
+import MatchTimeline from "../components/MatchTimeline";
 import Footer from "../components/Footer";
 
-function Dashboard(){
+import matchData from "../data/matchData";
 
-return(
+function Dashboard() {
+  const [match, setMatch] = useState(matchData);
 
-<>
+  return (
+    <div className="dashboard">
 
-<Navbar/>
+      <Navbar />
 
-<HeroScoreboard/>
+      <HeroScoreboard
+        match={match}
+        setMatch={setMatch}
+      />
 
-<Statistics/>
+      <Statistics match={match} />
 
-<ManOfMatch/>
+      <ManOfMatch match={match} />
 
-<Footer/>
+      <LeagueStandings match={match} />
 
-</>
+      <MatchTimeline />
 
-)
+      <Footer />
 
+    </div>
+  );
 }
 
 export default Dashboard;
