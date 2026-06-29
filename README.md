@@ -1,35 +1,48 @@
 # ⚽ FIFA Match Center Dashboard
 
-A premium, responsive football match analytics dashboard built using **React + Vite**, inspired by the official FIFA Match Center experience. The application provides an interactive interface featuring a live-style scoreboard, animated match statistics, league standings, player highlights, and a modern stadium-themed UI.
+A premium, responsive football match dashboard built with **React + Vite**, inspired by the official **FIFA Match Center** experience. The application features a modern landing page, animated match dashboard, interactive statistics, player highlights, live match updates, and a premium football-themed UI.
+
+---
+
+# 🌍 Live Demo
+
+🔗 **Hosted Website:** https://fifa-hackup.vercel.app/
 
 ---
 
 # 📖 Project Description
 
-The **FIFA Match Center Dashboard** is a modern React-based web application that simulates the experience of following a live FIFA World Cup match.
+The **FIFA Match Center Dashboard** is a modern football web application that provides users with an immersive match viewing experience.
 
-The dashboard combines elegant UI design with interactive functionality to present:
+Inspired by FIFA's official Match Center, the application combines elegant UI design, reusable React components, smooth animations, and interactive features to simulate a professional football dashboard.
 
-* Live Match Scoreboard
-* Match Statistics
-* Man of the Match Spotlight
-* League Standings
-* Match Timeline
-* Interactive Match Simulation
-
-One of the key highlights of the project is the **Simulate Final Whistle** feature, which dynamically updates the scoreboard, match statistics, Man of the Match details, and league standings using React state management, providing users with an engaging and realistic football match experience.
+The application includes a dedicated landing page, detailed match analytics, player performance cards, standings, timeline events, and responsive layouts for all screen sizes.
 
 ---
 
 # ✨ Features
 
-## 🏆 Premium Match Scoreboard
+## 🏠 FIFA Landing Page
 
-* FIFA-inspired hero section
-* Team logos and live score
+* Premium FIFA-inspired landing page
+* Modern hero section
+* Interactive "Enter Match Center" navigation
+* Live featured match card
+* Finished match card
+* Upcoming match countdown timer
+* Responsive navigation bar
+* Stadium-themed background
+
+---
+
+## 🏆 Match Scoreboard
+
+* FIFA-inspired hero scoreboard
+* Team logos
+* Live score display
 * Stadium information
-* Full-Time match status
-* Copy Score functionality
+* Full-time status
+* Copy score functionality
 * Simulate Final Whistle button
 
 ---
@@ -39,74 +52,74 @@ One of the key highlights of the project is the **Simulate Final Whistle** featu
 * Possession comparison
 * Shots comparison
 * Fouls comparison
-* Animated progress bars
-* Responsive statistic cards
+* Animated statistic bars
+* Responsive layout
 
 ---
 
 ## ⭐ Man of the Match
 
-* Featured player spotlight
+* Featured player card
 * Player rating
 * Goals
 * Assists
 * Playing position
-* Interactive "View Details" modal
+* Interactive modal popup
+* Smooth hover animations
 
 ---
 
-## 🥇 League Standings
+## 📅 Match Timeline
 
-* 4-team league table
-* Leader highlighted
+* Goal events
+* Card events
+* Full-time event
+* Animated timeline
+* Football-themed icons
+
+---
+
+## 🏆 Group Standings
+
+* Dynamic standings table
 * Goal Difference (GD)
-* Points column
-* Responsive standings table
+* Medal icons 🥇🥈🥉
+* Team flags
+* Highlighted group leader
+* Responsive table
 
 ---
 
-## 📅 Match Timeline (Creative Feature)
+## ⏳ Live Countdown
 
-* Chronological match events
-* Goal highlights
-* Yellow card events
-* Full-time indicator
-* Smooth Framer Motion animations
+* Real-time countdown timer
+* Upcoming Germany vs France fixture
+* Updates every second
 
 ---
 
-## 🎮 Interactive Match Simulation
+## 🎨 Modern UI & UX
 
-* Simulate Final Whistle button
-* Dynamically updates:
-
-  * Match score
-  * Match statistics
-  * Man of the Match details
-  * League standings
-
----
-
-## 🎨 Modern UI
-
-* Stadium background
-* Premium dark theme
-* FIFA-inspired gold accents
+* Premium dark stadium theme
 * Glassmorphism cards
+* Gold accent colors
+* FIFA-inspired typography
+* Responsive layout
+* Smooth scrolling
 * Hover animations
-* Responsive design
-* Smooth transitions
+* Animated buttons
 
 ---
 
 ## ⚡ Animations
 
 * Page fade-in
-* Scroll reveal animations
-* Card hover effects
+* Floating cards
+* Hover effects
 * Animated progress bars
 * Smooth transitions
-* Framer Motion powered animations
+* Interactive buttons
+* Scroll animations using Framer Motion
 
 ---
 
@@ -117,17 +130,19 @@ One of the key highlights of the project is the **Simulate Final Whistle** featu
 * JavaScript (ES6+)
 * CSS3
 * Framer Motion
+* React Router DOM
 * React Icons
 
 ---
 
 # 📁 Project Structure
 
-```text
+```
 src/
 
 ├── assets/
-│   └── stadium.jpg
+│   ├── stadium.jpg
+│   └── fifacup.jpg
 │
 ├── components/
 │   ├── Navbar.jsx
@@ -142,9 +157,12 @@ src/
 │
 ├── data/
 │   ├── matchData.js
-│   └── standingsData.js
+│   ├── standingsData.js
+│   └── matchResults.js
 │
 ├── pages/
+│   ├── LandingPage.jsx
+│   ├── LandingPage.css
 │   └── Dashboard.jsx
 │
 ├── styles/
@@ -158,31 +176,31 @@ src/
 
 # 🚀 Installation
 
-### Clone the repository
+Clone the repository
 
 ```bash
-git clone https://github.com/ChristeenaJestin/FIFA-HACKUP.git
+git clone https://github.com/your-username/FIFA-HACKUP.git
 ```
 
-### Navigate into the project
+Navigate into the project
 
 ```bash
 cd FIFA-HACKUP
 ```
 
-### Install dependencies
+Install dependencies
 
 ```bash
 npm install
 ```
 
-### Start the development server
+Run the development server
 
 ```bash
 npm run dev
 ```
 
-### Open your browser
+Open your browser
 
 ```
 http://localhost:5173
@@ -190,35 +208,31 @@ http://localhost:5173
 
 ---
 
-# 🌐 Live Demo
+# 🎯 Creative Element
 
-**Hosted Application**
+### **FIFA Inspired Landing Page**
 
-https://fifa-hackup.vercel.app/
+Unlike a traditional sports dashboard, this project introduces a **dedicated FIFA-inspired landing page** that creates a realistic user journey. Users first enter a premium football-themed homepage featuring live fixtures and a real-time countdown before seamlessly navigating into the interactive Match Center dashboard. This transition transforms the application from a simple statistics page into an immersive football viewing experience, making it feel closer to an official FIFA Match Center platform.
 
----
 
-# 🌟 Creative Feature
+# 🌟 Highlights
 
-The project includes an **Interactive Match Timeline** that displays key match events such as goals, yellow cards, substitutions, and the final whistle in chronological order.
-
-Additionally, the **Simulate Final Whistle** feature dynamically updates the match scoreboard, statistics, Man of the Match information, and league standings using React state management, providing an engaging simulation of a completed football match.
-
----
-
-# 🚀 Future Enhancements
-
-* Live API integration
-* User authentication
-* Match scheduling
-* Team comparison dashboard
-* Player performance analytics
-* Dark/Light theme toggle
-* Real-time live score updates
+* FIFA-inspired Landing Page
+* Interactive Match Dashboard
+* Live Countdown Timer
+* Match Timeline
+* Dynamic Group Standings
+* Man of the Match Modal
+* Responsive Design
+* Glassmorphism UI
+* Smooth Animations
+* Modern React Component Architecture
 
 ---
 
-# 👥 Contributors
+
+
+# 👨‍💻 Contributors
 
 **Team Name:** Ignite Duo
 
@@ -227,6 +241,4 @@ Additionally, the **Simulate Final Whistle** feature dynamically updates the mat
 
 ---
 
-# 📜 License
-
-This project was developed as part of the **FIFA HackUp '26 Quarter Final** competition for educational and demonstration purposes.
+## ⭐ If you enjoyed this project, don't forget to give it a star on GitHub!
