@@ -1,57 +1,9 @@
 import { motion } from "framer-motion";
 
-const teams = [
-  {
-    pos: 1,
-    name: "Brazil",
-    flag: "https://flagcdn.com/br.svg",
-    played: 3,
-    won: 3,
-    draw: 0,
-    lost: 0,
-    gf: 8,
-    ga: 2,
-    pts: 9,
-  },
-  {
-    pos: 2,
-    name: "Argentina",
-    flag: "https://flagcdn.com/ar.svg",
-    played: 3,
-    won: 2,
-    draw: 0,
-    lost: 1,
-    gf: 6,
-    ga: 4,
-    pts: 6,
-  },
-  {
-    pos: 3,
-    name: "Mexico",
-    flag: "https://flagcdn.com/mx.svg",
-    played: 3,
-    won: 1,
-    draw: 0,
-    lost: 2,
-    gf: 3,
-    ga: 5,
-    pts: 3,
-  },
-  {
-    pos: 4,
-    name: "Canada",
-    flag: "https://flagcdn.com/ca.svg",
-    played: 3,
-    won: 0,
-    draw: 0,
-    lost: 3,
-    gf: 2,
-    ga: 8,
-    pts: 0,
-  },
-];
 
-function LeagueStandings() {
+
+function LeagueStandings({ match }) {
+  const teams = match.standings;
   return (
     <motion.section
       className="standings-section"

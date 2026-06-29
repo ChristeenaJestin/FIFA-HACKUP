@@ -29,7 +29,7 @@ function Dashboard() {
 
       <LeagueStandings match={match} />
 
-      <MatchTimeline />
+      <MatchTimeline match={match} />
 
       <Footer />
 

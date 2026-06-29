@@ -1,4 +1,5 @@
 import { FaTrophy, FaRegCopy, FaMapMarkerAlt } from "react-icons/fa";
+import matchResults from "../data/matchResults";
 
 function HeroScoreboard({ match, setMatch }) {
 
@@ -13,56 +14,37 @@ function HeroScoreboard({ match, setMatch }) {
 
   const simulateFinalWhistle = () => {
 
-    setMatch({
+  const randomMatch =
+    matchResults[Math.floor(Math.random() * matchResults.length)];
 
-      ...match,
+  setMatch({
 
-      teamA: {
-        ...match.teamA,
-        score: 4
-      },
+    ...match,
 
-      teamB: {
-        ...match.teamB,
-        score: 2
-      },
+    teamA: {
+      ...match.teamA,
+      score: randomMatch.teamA.score,
+    },
 
-      stats: [
-        {
-          title: "Possession",
-          home: 58,
-          away: 42,
-          unit: "%"
-        },
-        {
-          title: "Shots",
-          home: 22,
-          away: 12,
-          unit: ""
-        },
-        {
-          title: "Fouls",
-          home: 11,
-          away: 15,
-          unit: ""
-        }
-      ],
+    teamB: {
+      ...match.teamB,
+      score: randomMatch.teamB.score,
+    },
 
-      player: {
-        name: "Vinicius Jr.",
-        image:
-          "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=500",
-        rating: 9.9,
-        goals: 3,
-        assists: 1,
-        position: "LW"
-      }
+    stats: randomMatch.stats,
 
-    });
+    player: randomMatch.player,
 
-    alert("🏁 Final Whistle! Match Updated.");
+    standings: randomMatch.standings,
 
-  };
+    timeline: randomMatch.timeline,
+
+  });
+
+  alert("🏁 Final Whistle! Match Updated.");
+
+};
+
 
   return (
 
