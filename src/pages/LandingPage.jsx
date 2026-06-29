@@ -1,7 +1,43 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 import fifacup from "../assets/fifacup.jpg";
 function LandingPage() {
+    const [timeLeft, setTimeLeft] = useState("");
+
+useEffect(() => {
+  const target = new Date();
+  target.setHours(20, 0, 0, 0); // 8:00 PM today
+
+  const timer = setInterval(() => {
+    const now = new Date();
+
+    let diff = target - now;
+
+    // If it's already past 8 PM today, set target to tomorrow
+    if (diff < 0) {
+      target.setDate(target.getDate() + 1);
+      diff = target - now;
+    }
+
+    const hours = Math.floor(diff / (1000 * 60 * 60));
+    const minutes = Math.floor(
+      (diff % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor(
+      (diff % (1000 * 60)) / 1000
+    );
+
+    setTimeLeft(
+      `${String(hours).padStart(2, "0")}:${String(minutes).padStart(
+        2,
+        "0"
+      )}:${String(seconds).padStart(2, "0")}`
+    );
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, []);
   return (
     <div
   className="landing"
@@ -92,15 +128,19 @@ function LandingPage() {
     {/* Upcoming Match */}
     <div className="card">
 
-      <h3>Germany vs France</h3>
+  <h3>Germany vs France</h3>
 
-      <h1>8:00 PM</h1>
+  <h1>{timeLeft}</h1>
 
-      <small className="upcoming-badge">
-        ⏳ Upcoming
-      </small>
+  <p className="countdown-text">
+    Starts In
+  </p>
 
-    </div>
+  <small className="upcoming-badge">
+    ⏳ Upcoming
+  </small>
+
+</div>
 
   </div>
 

@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Loader from "./components/Loader";
 
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
@@ -6,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 function App() {
 
   return (
+    <Loader>
 
     <BrowserRouter>
 
@@ -24,6 +26,7 @@ function App() {
       </Routes>
 
     </BrowserRouter>
+    </Loader>
 
   );
 
