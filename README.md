@@ -1,40 +1,40 @@
-
 # ⚽ FIFA Match Center Dashboard
 
-A premium, responsive football match dashboard built with **React + Vite**, inspired by the FIFA Match Center experience. The application presents live-style match information through an interactive and visually appealing interface featuring animated scoreboards, match statistics, player highlights, and a modern stadium-themed design.
+A premium, responsive football match analytics dashboard built using **React + Vite**, inspired by the official FIFA Match Center experience. The application provides an interactive interface featuring a live-style scoreboard, animated match statistics, league standings, player highlights, and a modern stadium-themed UI.
 
 ---
 
-## 📖 Project Description
+# 📖 Project Description
 
-The **FIFA Match Center Dashboard** is a modern web application designed to provide football fans with an immersive match viewing experience.
+The **FIFA Match Center Dashboard** is a modern React-based web application that simulates the experience of following a live FIFA World Cup match.
 
-Inspired by official FIFA dashboards, the application combines elegant UI design with interactive animations to showcase:
+The dashboard combines elegant UI design with interactive functionality to present:
 
-* Live match scoreboard
-* Match statistics
-* Man of the Match section
-* Responsive modern interface
-* Premium dark stadium theme
+* Live Match Scoreboard
+* Match Statistics
+* Man of the Match Spotlight
+* League Standings
+* Match Timeline
+* Interactive Match Simulation
 
-The project demonstrates modern frontend development practices using React components, reusable architecture, CSS animations, and responsive layouts.
+One of the key highlights of the project is the **Simulate Final Whistle** feature, which dynamically updates the scoreboard, match statistics, Man of the Match details, and league standings using React state management, providing users with an engaging and realistic football match experience.
 
 ---
 
 # ✨ Features
 
-### 🏆 Premium Match Scoreboard
+## 🏆 Premium Match Scoreboard
 
 * FIFA-inspired hero section
-* Team logos
-* Live score display
-* Full-time status indicator
+* Team logos and live score
 * Stadium information
-* Copy score functionality
+* Full-Time match status
+* Copy Score functionality
+* Simulate Final Whistle button
 
 ---
 
-### 📊 Match Statistics
+## 📊 Match Statistics
 
 * Possession comparison
 * Shots comparison
@@ -44,37 +44,69 @@ The project demonstrates modern frontend development practices using React compo
 
 ---
 
-### ⭐ Man of the Match
+## ⭐ Man of the Match
 
-* Featured player section
+* Featured player spotlight
 * Player rating
 * Goals
 * Assists
-* Position
-* Interactive "View Details" button
+* Playing position
+* Interactive "View Details" modal
 
 ---
 
-### 🎨 Modern UI
+## 🥇 League Standings
+
+* 4-team league table
+* Leader highlighted
+* Goal Difference (GD)
+* Points column
+* Responsive standings table
+
+---
+
+## 📅 Match Timeline (Creative Feature)
+
+* Chronological match events
+* Goal highlights
+* Yellow card events
+* Full-time indicator
+* Smooth Framer Motion animations
+
+---
+
+## 🎮 Interactive Match Simulation
+
+* Simulate Final Whistle button
+* Dynamically updates:
+
+  * Match score
+  * Match statistics
+  * Man of the Match details
+  * League standings
+
+---
+
+## 🎨 Modern UI
 
 * Stadium background
-* Dark premium theme
-* Gold accent colors
+* Premium dark theme
+* FIFA-inspired gold accents
 * Glassmorphism cards
 * Hover animations
+* Responsive design
 * Smooth transitions
-* Mobile responsive layout
 
 ---
 
-### ⚡ Animations
+## ⚡ Animations
 
 * Page fade-in
-* Floating team logos
-* Hover effects
+* Scroll reveal animations
+* Card hover effects
 * Animated progress bars
-* Interactive buttons
-* Smooth section transitions
+* Smooth transitions
+* Framer Motion powered animations
 
 ---
 
@@ -91,80 +123,110 @@ The project demonstrates modern frontend development practices using React compo
 
 # 📁 Project Structure
 
-```
+```text
 src/
 
-│── assets/
-│     
-│     └── stadium.jpg
-
-│── components/
-│     ├── Navbar.jsx
-│     ├── HeroScoreboard.jsx
-│     ├── Statistics.jsx
-│     ├── StatRow.jsx
-│     ├── ManOfMatch.jsx
-│     ├── Modal.jsx
-│     └── Footer.jsx
-
-│── data/
-│     └── matchData.js
-
-│── pages/
-│     └── Dashboard.jsx
-
-│── styles/
-│     └── globals.css
-
-│── App.jsx
-│── main.jsx
+├── assets/
+│   └── stadium.jpg
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── HeroScoreboard.jsx
+│   ├── Statistics.jsx
+│   ├── StatRow.jsx
+│   ├── ManOfMatch.jsx
+│   ├── LeagueStandings.jsx
+│   ├── MatchTimeline.jsx
+│   ├── Modal.jsx
+│   └── Footer.jsx
+│
+├── data/
+│   ├── matchData.js
+│   └── standingsData.js
+│
+├── pages/
+│   └── Dashboard.jsx
+│
+├── styles/
+│   └── globals.css
+│
+├── App.jsx
+└── main.jsx
 ```
 
 ---
 
 # 🚀 Installation
 
-Clone the repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/FIFA-HACKUP-MEXICO.git
+git clone https://github.com/ChristeenaJestin/FIFA-HACKUP.git
 ```
 
-Navigate into the project
+### Navigate into the project
 
 ```bash
-cd FIFA-HACKUP-MEXICO
+cd FIFA-HACKUP
 ```
 
-Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server
+### Start the development server
 
 ```bash
 npm run dev
 ```
 
-Open your browser
+### Open your browser
 
 ```
 http://localhost:5173
 ```
 
 ---
-# Hosted Link
-```
+
+# 🌐 Live Demo
+
+**Hosted Application**
+
 https://fifa-hackup.vercel.app/
-```
 
-#  Contributors
+---
 
-Team Name-Ignite Duo
+# 🌟 Creative Feature
+
+The project includes an **Interactive Match Timeline** that displays key match events such as goals, yellow cards, substitutions, and the final whistle in chronological order.
+
+Additionally, the **Simulate Final Whistle** feature dynamically updates the match scoreboard, statistics, Man of the Match information, and league standings using React state management, providing an engaging simulation of a completed football match.
+
+---
+
+# 🚀 Future Enhancements
+
+* Live API integration
+* User authentication
+* Match scheduling
+* Team comparison dashboard
+* Player performance analytics
+* Dark/Light theme toggle
+* Real-time live score updates
+
+---
+
+# 👥 Contributors
+
+**Team Name:** Ignite Duo
 
 * Shaun Mathew
 * Christeena Jestin
 
+---
 
+# 📜 License
+
+This project was developed as part of the **FIFA HackUp '26 Quarter Final** competition for educational and demonstration purposes.
