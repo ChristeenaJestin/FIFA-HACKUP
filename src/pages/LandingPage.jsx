@@ -58,9 +58,11 @@ useEffect(() => {
 
         
 
-        <button className="nav-btn">
-          Enter Match Center
-        </button>
+        <Link to="/dashboard">
+  <button className="nav-btn">
+    Enter Match Center
+  </button>
+</Link>
 
       </nav>
 
