@@ -241,4 +241,3 @@ Unlike a traditional sports dashboard, this project introduces a **dedicated FIF
 
 ---
 
-## ⭐ If you enjoyed this project, don't forget to give it a star on GitHub!
